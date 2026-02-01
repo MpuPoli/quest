@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Финал квеста Поли</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(circle at top left, #dff6ff, transparent 35%),
+                  radial-gradient(circle at bottom right, #ffe6f3, transparent 35%),
+                  linear-gradient(135deg, #f7fbff, #eef4ff);
+      color: #162033;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      width: min(860px, 100%);
+      background: rgba(255,255,255,0.88);
+      border: 1px solid rgba(90,120,180,0.22);
+      border-radius: 34px;
+      box-shadow: 0 24px 70px rgba(30,60,120,0.18);
+      padding: 42px;
+      text-align: center;
+    }
+    .emoji { font-size: 58px; letter-spacing: 8px; margin-bottom: 10px; }
+    h1 { margin: 10px 0 12px; font-size: clamp(36px, 6vw, 66px); }
+    p { font-size: clamp(18px, 2.5vw, 26px); line-height: 1.45; margin: 14px 0; }
+    .badge {
+      display: inline-block;
+      margin: 16px 0;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: #edf7ff;
+      border: 1px solid #b9e3ff;
+      font-size: 18px;
+    }
+    .buttons { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+    a {
+      color: white;
+      background: #168bd8;
+      text-decoration: none;
+      padding: 15px 22px;
+      border-radius: 18px;
+      font-weight: 700;
+      font-size: 18px;
+      box-shadow: 0 10px 22px rgba(22,139,216,0.26);
+    }
+    a.secondary { background: #2b3350; }
+    .small { margin-top: 24px; color: #5e6b83; font-size: 16px; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="emoji">🎉 🤖 💙 ✨</div>
+    <h1>Поздравляем!</h1>
+    <p>Вы нашли правильный коммит и прошли этап квеста от команды бота-расписания «Поли».</p>
+    <div class="badge">Финальная точка найдена 🔐</div>
+    <p>Теперь можно перейти к Telegram-боту и показать результат организаторам.</p>
+    <div class="buttons">
+      <a href="https://t.me/mpuhelp_bot">Открыть Telegram-бота</a>
+      <a class="secondary" href="https://github.com/MpuPoli/quest">Вернуться в репозиторий</a>
+    </div>
+    <p class="small">Московский Политех · Poly Quest · mpuhelp_bot</p>
+  </main>
+</body>
+</html>
